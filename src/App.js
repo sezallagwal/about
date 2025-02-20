@@ -7,12 +7,15 @@ import Hope from "./components/Hope";
 
 function App() {
   return (
-    <div>
-      <div>
+    <div className="flex w-full h-screen bg-white">
+      {/* Left Side - About Us & Helping Hand */}
+      <div className="w-1/2 flex flex-col gap-6">
         <AboutUs />
         <HelpingHand />
       </div>
-      <div>
+
+      {/* Right Side - Smiling Child, Nurturing, Hope */}
+      <div className="w-1/2 relative">
         <SmilingChild />
         <Nurturing />
         <Hope />
@@ -20,4 +23,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
